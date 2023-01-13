@@ -7,31 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAKJ</title>
     <link rel="stylesheet" href="../desktop_home/style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <header class="navbar">
-        <nav class="navbar-symbols max-width">
-            <ul  class="logo">
-                <li> FAKJ </li>
+    <!--Header and Navigation Bar-->
+    <header>
+        <div class="navbar max-width">
+            <a href="#">FAKJ</a>
+            <ul class="symbols">
+                <li>
+                    <img id="search-symbol" src="../assets/search_symbol.png" alt="search symbol">
+                </li> <!--Symbol for burger bar-->
+
+                <li>
+                    <img src="../assets/shopping_cart.png" alt="shopping cart">
+                </li> <!--Shopping Cart-->
             </ul>
-            <ul class="assets">
-                <li> <img  src="../assets/search_symbol.png" alt="search symbol"> </li>
-                <li> <img  src="../assets/shopping_cart.png" alt="shopping cart"> </li>
-            </ul>
-        </nav>
-        <nav >
-            <ul class="search-box max-width">
+        </div>
+    <!--Dropdown menu-->
+            <ul class="dropdown-menu max-width hide">
                 <li><a href='#'>NEW </a></li>
-                <li><a href='#'>FIND YOUR STYLE/a></li>
-                <li><a href='#'>WOMAN/a></li>
-                <li><a href='#'>MAN/a></li>
-                <li><a href='#'>UNISEX/a></li>
-                <li><a href='#'>SHOES/a></li>
-                <li><a href='#'>ACCESSORIES/a></li>
-                <li class="search-box-last-border"><a href='#'ABOUT US</a></li>
+                <li class="border"></li> <!--stripes between list tags-->
+                <li><a href='#'>FIND YOUR STYLE </a></li>
+                <li class="border"></li>
+                <li><a href='#'>WOMAN </a></li>
+                <li class="border"></li>
+                <li><a href='#'>MAN </a></li>
+                <li class="border"></li>
+                <li><a href='#'>UNISEX </a></li>
+                <li class="border"></li>
+                <li><a href='#'>SHOES </a></li>
+                <li class="border"></li>
+                <li><a href='#'>ACCESSORIES </a></li>
+                <li class="border"></li>
+                <li class="last-li"><a href='#'> ABOUT US</a></li> <!--Class removes the right border-->
             </ul>
-        </nav>
 
         <div class="coupon max-width">
             <span>50% OFF WORLDWIDE SHIPPING! USE #CODEFIRSTGIRLS COUPON AT CHECKOUT!</span>
@@ -39,11 +50,7 @@
     </header>
 
     <div class="shop-map-box">
-        <img class="shop-img" src="../Images/Tan-Jacket.jpg" alt="tan jacket with shop button" usemap="#shop-map"
-            class="shop-map">
-        <map name="shop-map">
-            <button></button>
-        </map>
+        <img class="shop-img" src="../Images/Tan-Jacket.jpg" alt="tan jacket with shop button">
     </div>
 
     <div class="fresh-arrivals-slide-box">
