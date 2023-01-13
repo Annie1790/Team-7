@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  display:block;
+  width: 90%;
+  margin-left:  8px;
+  margin-right: 8px;
+  filter: grayscale(100%)
+}
+
+.overlay {
+  display:block;
+  width:90%;
+  margin-left:  8px;
+  margin-right: 8px;
+  opacity: 00;
+  transition: .5s ease;
+  background-color: rgb(224, 223, 226);
+}
+
+.container .image:hover .overlay {
+  opacity: 0.9;
+}
+
+.image:hover{
+  filter: grayscale(0%)
+}
+.caption {
+  display:block;
+    color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+
+}
