@@ -11,51 +11,41 @@
 </head>
 
 <body>
-    <!--Header and Navigation Bar-->
+    <!--Header, Navigation Bar, Dropdown Menu-->
     <header>
-        <div class="navbar max-width">
-            <a href="#">FAKJ</a>
+        <nav class="navbar"> <!--Flexbox for navbar tags-->
+            <a href="#">FAKJ</a> <!--Logo-->
             <ul class="symbols">
                 <li class="search-symbol">
-                    <img  src="../assets/search_symbol.png" alt="search symbol">
-                    <div class="dropdown">
-                        <div class="dropdown-active">
-                            <ul>
-                                <div class="dropdown-menu max-width">
-                                    <li><a href='#'>NEW </a></li>
-                                    <li class="border"></li> <!--stripes between list tags-->
-                                    <li><a href='#'>FIND YOUR STYLE </a></li>
-                                    <li class="border"></li>
-                                    <li><a href='#'>WOMAN </a></li>
-                                    <li class="border"></li>
-                                    <li><a href='#'>MAN </a></li>
-                                    <li class="border"></li>
-                                    <li><a href='#'>UNISEX </a></li>
-                                    <li class="border"></li>
-                                    <li><a href='#'>SHOES </a></li>
-                                    <li class="border"></li>
-                                    <li><a href='#'>ACCESSORIES </a></li>
-                                    <li class="border"></li>
-                                    <li class="last-li"><a href='#'> ABOUT US</a></li> <!--Class removes the right border-->
-                                </div>
-                            </ul>
+                    <!--Symbol for burger bar-->
+                    <img src="../assets/search_symbol.png" alt="search symbol">
+                    <div class="dropdown"> <!--Dropdown menu, display is changing on hover-->
+                        <div class="dropdown-menu max-width"> <!--container with styling-->
+                            <div><a href='#'>NEW </a></div>
+                            <div class="border"></div> <!--stripes between list tags-->
+                            <div><a href='#'>FIND YOUR STYLE </a></div>
+                            <div class="border"></div>
+                            <div><a href='#'>WOMAN </a></div>
+                            <div class="border"></div>
+                            <div><a href='#'>MAN </a></div>
+                            <div class="border"></div>
+                            <div><a href='#'>UNISEX </a></div>
+                            <div class="border"></div>
+                            <div><a href='#'>SHOES </a></div>
+                            <div class="border"></div>
+                            <div><a href='#'>ACCESSORIES </a></div>
+                            <div class="border"></div>
+                            <div><a href='#'> ABOUT US</a></div>
                         </div>
                     </div>
-                </li> <!--Symbol for burger bar-->
-
-                <li>
+                </li>
+                <li> <!--Shopping cart-->
                     <img src="../assets/shopping_cart.png" alt="shopping cart">
                 </li> <!--Shopping Cart-->
             </ul>
-        </div>
+        </nav>
 
-        <!--Dropdown menu-->
-        
-
-
-
-
-        <div class="coupon max-width">
+        <div class="coupon">
             <span>50% OFF WORLDWIDE SHIPPING! USE #CODEFIRSTGIRLS COUPON AT CHECKOUT!</span>
         </div>
     </header>
@@ -64,15 +54,33 @@
         <img class="shop-img" src="../images/Tan-Jacket.jpg" alt="tan jacket with shop button">
     </div>
 
+    <h1 class="fresh-arrivals-header">FRESH ARRIVALS</h1>
     <div class="fresh-arrivals-slide-box">
-        <p>FRESH ARRIVALS</p>
-        <div class="fresh-arrivals-img">
+
+        <div class="box-1">
+            <p class="box-price-tag">£15</p>
             <img src="../images/Brown-Trousers.jpg" alt="brown trousers">
-            <img src="../images/BW-Jacket.jpg" alt="jacket">
-            <img src="../images/Green-PufferCoat.jpg" alt="green puffer coat">
-            <img src="../images/Grey-Bag.jpg" alt="grey bag">
-            <img src="../images/Green-Trousers.jpg" alt="green trousers">
+            <div class="overlay"></div>
         </div>
+
+        <div class="box-2">
+            <p class="box-price-tag">£15</p>
+            <img src="../images/BW-Jacket.jpg" alt="jacket">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="box-3">
+            <p class="box-price-tag">£15</p>
+            <div class="overlay"></div>
+            <img src="../images/Green-PufferCoat.jpg" alt="green puffer coat">
+        </div>
+
+        <div class="box-4">
+            <p class="box-price-tag">£15</p>
+            <div class="overlay"></div>
+            <img src="../images/Grey-Bag.jpg" alt="grey bag">
+        </div>
+
     </div>
 
     <div class="find-your-style-box">
