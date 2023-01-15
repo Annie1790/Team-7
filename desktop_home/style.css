@@ -114,6 +114,14 @@ header {
 
 /************************************************************************/
 /*Fresh Arrivals Slide*/
+
+@media screen and (min-width: 480px) {
+    .box-2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+
 .fresh-arrivals-header {
     grid-row: 3;
     grid-column: 2/10;
