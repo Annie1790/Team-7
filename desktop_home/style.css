@@ -115,12 +115,6 @@ header {
 /************************************************************************/
 /*Fresh Arrivals Slide*/
 
-@media screen and (min-width: 480px) {
-    .box-2 {
-      grid-row: 1;
-      grid-column: 2;
-    }
-  }
 
 .fresh-arrivals-header {
     grid-row: 3;
@@ -131,10 +125,6 @@ header {
     grid-row: 4;
     grid-column: 3/9;
     display: grid;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
     gap: 1em;
 }
 
@@ -200,6 +190,7 @@ header {
     width: 400px;
     opacity: 0;
     transition: .5s ease;
+    margin: 0px;
     background-color: #008CBA;
 }
 
