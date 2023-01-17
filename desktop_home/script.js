@@ -10,47 +10,47 @@ const price4 = document.querySelector("#price-tag-4");
 
 let i = 0; //variable for looping
 
-//array with object of prices and images sourced from images repository
+//array with object of prices and Images sourced from Images repository
 let productItems = [
   {
     price: "£29",
-    source: "../images/Brown-Trousers.jpg",
+    source: "../Images/Brown-Trousers.jpg",
   },
   {
     price: "£111",
-    source: "../images/BW-Jacket.jpg",
+    source: "../Images/BW-Jacket.jpg",
   },
   {
     price: "£129",
-    source: "../images/Green-PufferCoat.jpg",
+    source: "../Images/Green-PufferCoat.jpg",
   },
   {
     price: "£36",
-    source: "../images/Green-Trousers.jpg",
+    source: "../Images/Green-Trousers.jpg",
   },
   {
     price: "£39",
-    source: "../images/Grey-Bag.jpg",
+    source: "../Images/Grey-Bag.jpg",
   },
   {
     price: "£35",
-    source: "../images/Grey-Trousers.jpg",
+    source: "../Images/Grey-Trousers.jpg",
   },
   {
     price: "£89",
-    source: "../images/Maroon-Dress.jpg",
+    source: "../Images/Maroon-Dress.jpg",
   },
   {
     price: "£11",
-    source: "../images/Sitting.jpg",
+    source: "../Images/Sitting.jpg",
   },
   {
     price: "£149",
-    source: "../images/Tan-Jacket.jpg",
+    source: "../Images/Tan-Jacket.jpg",
   },
   {
     price: "£24",
-    source: "../images/Top.jpg",
+    source: "../Images/Top.jpg",
   },
 ];
 
@@ -72,7 +72,7 @@ function callNextImage(image, price) {
   getProductPrice(productItems[i].price, price);
   i++;
 }
-//calls the function above on all four images and prices
+//calls the function above on all four Images and prices
 function loop() {
   callNextImage(img1, price1);
   callNextImage(img2, price2);
