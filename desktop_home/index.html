@@ -2,46 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAKJ</title>
-    <link rel="stylesheet" href="../desktop_home/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../desktop_home/style.css" />
+    <!-- JavaScript -->
     <script src="./script.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
     <!--Header, Navigation Bar, Dropdown Menu-->
     <header>
-        <nav class="navbar"> <!--Flexbox for navbar tags-->
-            <a href="#">FAKJ</a> <!--Logo-->
+        <nav class="navbar">
+            <!--Flexbox for navbar tags-->
+            <a href="#">FAKJ</a>
+            <!--Logo-->
             <ul class="symbols">
                 <li class="search-symbol">
                     <!--Symbol for burger bar-->
-                    <img src="../assets/search_symbol.png" alt="search symbol">
-                    <div class="dropdown"> <!--Dropdown menu, display is changing on hover-->
-                        <div class="dropdown-menu max-width"> <!--container with styling-->
-                            <div><a href='#'>NEW </a></div>
-                            <div class="border"></div> <!--stripes between list tags-->
-                            <div><a href='#'>FIND YOUR STYLE </a></div>
+                    <img src="../assets/search_symbol.png" alt="search symbol" />
+                    <div class="dropdown">
+                        <!--Dropdown menu, display is changing on hover-->
+                        <div class="dropdown-menu max-width">
+                            <!--container with styling-->
+                            <div><a href="#">NEW </a></div>
                             <div class="border"></div>
-                            <div><a href='#'>WOMAN </a></div>
+                            <!--stripes between list tags-->
+                            <div><a href="#">FIND YOUR STYLE </a></div>
                             <div class="border"></div>
-                            <div><a href='#'>MAN </a></div>
+                            <div><a href="#">WOMAN </a></div>
                             <div class="border"></div>
-                            <div><a href='#'>UNISEX </a></div>
+                            <div><a href="#">MAN </a></div>
                             <div class="border"></div>
-                            <div><a href='#'>SHOES </a></div>
+                            <div><a href="#">UNISEX </a></div>
                             <div class="border"></div>
-                            <div><a href='#'>ACCESSORIES </a></div>
+                            <div><a href="#">SHOES </a></div>
                             <div class="border"></div>
-                            <div><a href='#'> ABOUT US</a></div>
+                            <div><a href="#">ACCESSORIES </a></div>
+                            <div class="border"></div>
+                            <div><a href="#"> ABOUT US</a></div>
                         </div>
                     </div>
                 </li>
-                <li> <!--Shopping cart-->
-                    <img src="../assets/shopping_cart.png" alt="shopping cart">
-                </li> <!--Shopping Cart-->
+                <li>
+                    <!--Shopping cart-->
+                    <img src="../assets/shopping_cart.png" alt="shopping cart" />
+                </li>
+                <!--Shopping Cart-->
             </ul>
         </nav>
         <!--Coupon-->
@@ -51,66 +66,105 @@
     </header>
 
     <div class="shop-map-box">
-        <img class="shop-img" src="../images/Tan-Jacket.jpg" alt="tan jacket with shop button">
+        <img class="shop-img" src="../images/Tan-Jacket.jpg" alt="tan jacket with shop button" />
     </div>
-    <!--Fresh arrivals-->
-    <h1 class="fresh-arrivals-header">FRESH ARRIVALS</h1>
-    <!--Fresh arrivals container-->
-    <div class="fresh-arrivals-slide-box">
-        <!--Containers-->
-        <div class="box-1">
-            <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-            <p class="box-price-tag" id="price-tag-1">£15</p>
-            <div class="overlay"></div>
-            <img class="product-image" id="image-1">
-        </div>
 
-        <div class="box-2">
-            <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-            <p class="box-price-tag" id="price-tag-2">£15</p>
-            <div class="overlay"></div>
-            <img class="product-image" id="image-2">
-        </div>
+    <div class="gradient-background">
+        <!--Fresh arrivals-->
+        <h2 class="fresh-arrivals-header">FRESH ARRIVALS</h2>
+        <!--Fresh arrivals container-->
+        <div class="fresh-arrivals-slide-box">
+            <!--Containers-->
+            <div class="box-1">
+                <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+                <p class="box-price-tag" id="price-tag-1">£15</p>
+                <div class="overlay"></div>
+                <img class="product-image" id="image-1" />
+            </div>
 
-        <div class="box-3">
-            <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-            <p class="box-price-tag" id="price-tag-3">£15</p>
-            <div class="overlay"></div>
-            <img class="product-image" id="image-3">
-        </div>
+            <div class="box-2">
+                <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+                <p class="box-price-tag" id="price-tag-2">£15</p>
+                <div class="overlay"></div>
+                <img class="product-image" id="image-2" />
+            </div>
 
-        <div class="box-4">
-            <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-            <p class="box-price-tag" id="price-tag-4">£15</p>
-            <div class="overlay"></div>
-            <img class="product-image" id="image-4">
-        </div>
+            <div class="box-3">
+                <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+                <p class="box-price-tag" id="price-tag-3">£15</p>
+                <div class="overlay"></div>
+                <img class="product-image" id="image-3" />
+            </div>
 
+            <div class="box-4">
+                <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+                <p class="box-price-tag" id="price-tag-4">£15</p>
+                <div class="overlay"></div>
+                <img class="product-image" id="image-4" />
+            </div>
+        </div>
     </div>
 
     <div class="find-your-style-box">
-        <img src="../images/Reversible-Jacket.GIF" alt="">
+        <div class="find-your-style-text">
+            <h2 class="find-your-text">FIND YOUR</h2>
+            <p class="style-text">STYLE</p>
+            <hr />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </p>
+            <button>TAKE THE QUIZ</button>
+        </div>
+        <img class="reversible-jacket-gif" src="../images/Reversible-Jacket.GIF" alt="reversible jacket gif" />
     </div>
 
-    <div class="categories-slide-box">
-        <p>categories</p>
+    <div class="categories-section">
+        <h2 class="categories-heading">PRODUCTS</h2>
+        <div class="gallery-scroll">
+            <figure class="gallery-item">
+                <img class="circle-img" src="../images/Top.jpg" alt="light beige long sleeve shirt" />
+                <figcaption>TOPS</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img class="circle-img" src="../images/Green-Trousers.jpg" alt="light beige long sleeve shirt" />
+                <figcaption>TROUSERS</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img class="circle-img" src="../images/Maroon-Dress.jpg" alt="light beige long sleeve shirt" />
+                <figcaption>DRESSES</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img class="circle-img" src="../images/BW-Jacket.jpg" alt="light beige long sleeve shirt" />
+                <figcaption>OUTERWEAR</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img class="circle-img" src="../images/Nike-Trainers.jpg" alt="nike trainers" />
+                <figcaption>SNEAKERS</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img class="circle-img" src="../images/Grey-Bag.jpg" alt="light beige long sleeve shirt" />
+                <figcaption>BAGS</figcaption>
+            </figure>
+        </div>
     </div>
 
     <div class="circular-fashion-box">
-        <img src="../images/Sitting.jpg" alt="circular fashion" usemap="#circ-fash">
+        <img src="../images/Sitting.jpg" alt="circular fashion" usemap="#circ-fash" />
         <map name="circ-fash">
             <h1>CIRCULAR FASHION</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ipsum ut odio porta scelerisque.
-                Quisque dictum a ex nec venenatis. Suspendisse in semper orci. Aliquam erat volutpat. Ut eu lacus sed
-                magna convallis tincidunt. Donec mattis volutpat imperdiet. Ut rhoncus enim id justo gravida, nec
-                aliquam quam feugiat.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ipsum ut odio porta
+                scelerisque. Quisque dictum a ex nec venenatis. Suspendisse in semper orci. Aliquam erat
+                volutpat. Ut eu lacus sed magna convallis tincidunt. Donec mattis volutpat imperdiet. Ut
+                rhoncus enim id justo gravida, nec aliquam quam feugiat.
+            </p>
             <button>LEARN MORE</button>
         </map>
     </div>
 
-    <footer>
-        COPYRIGHT JOANNE, FEMKE, ANIKO, KELLI
-    </footer>
+    <footer>COPYRIGHT JOANNE, FEMKE, ANIKO, KELLI</footer>
 </body>
 
 </html>

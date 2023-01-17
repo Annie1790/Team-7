@@ -67,7 +67,6 @@ function callNextImage(image, price) {
     if (i == 10) {
         i = 0;
     }
-    console.log(i)
     getImgSrc(productItems[i].source, image);
     getProductPrice(productItems[i].price, price);
     i++;
