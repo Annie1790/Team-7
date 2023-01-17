@@ -313,7 +313,7 @@ figcaption {
 /*Circular Fashion Box*/
 .circular-fashion-box {
   grid-row: 7;
-  grid-column: 3/10;
+  grid-column: 3/span 4;
 }
 
 .circular-fashion-box > img {
