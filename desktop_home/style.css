@@ -47,9 +47,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px;
-  /* width: auto; Is this needed? Added start to finish code instead :) */
-  grid-row-start: 1;
-  grid-row-end: 13;
+  width: auto;
   width: 100%;
 }
 
@@ -227,7 +225,7 @@ header {
 /*Find your Style*/
 .find-your-style-box {
   grid-row: 5;
-  grid-column: 4/10;
+  grid-column: 3/10;
   position: relative;
 }
 
@@ -268,26 +266,55 @@ hr {
 .categories-section {
   grid-row: 6;
   grid-column: 1/13;
-  background-color: rgb(139, 139, 139);
 }
 
-.carousel {
-  padding: 1rem;
-  max-width: 100vw;
+.categories-section h2 {
+  /* padding-left: 8%; */
+  align-content: space-around;
+}
+
+.gallery-scroll {
+  display: flex;
+  flex-wrap: nowrap;
   margin: 0;
+  grid-column: 1/13;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  max-width: 100vw;
+  background-color: rgb(139, 139, 139);
+  text-align: center;
 }
 
-.images-container {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.galler-item {
   display: flex;
   gap: 40px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  /* padding-left: 8%; */
 }
 
-.images-container img {
+.gallery-item img {
   border-radius: 100%;
   width: 175px;
   height: 175px;
-  scroll-padding-left: 200px;
+  margin-top: 10px;
+}
+
+figcaption {
+  font-weight: bold;
+  color: white;
+  margin: 20px 0 10px;
 }
 
 /************************************************************************/
