@@ -12,71 +12,102 @@ let i = 0; //variable for looping
 
 //array with object of prices and images sourced from images repository
 let productItems = [
-    {
-        price: "£29",
-        source: "../images/Brown-Trousers.jpg",
-    },
-    {
-        price: "£111",
-        source: "../images/BW-Jacket.jpg",
-    },
-    {
-        price: "£129",
-        source: "../images/Green-PufferCoat.jpg",
-    },
-    {
-        price: "£36",
-        source: "../images/Green-Trousers.jpg",
-    },
-    {
-        price: "£39",
-        source: "../images/Grey-Bag.jpg",
-    },
-    {
-        price: "£35",
-        source: "../images/Grey-Trousers.jpg",
-    },
-    {
-        price: "£89",
-        source: "../images/Maroon-Dress.jpg",
-    },
-    {
-        price: "£11",
-        source: "../images/Sitting.jpg",
-    },
-    {
-        price: "£149",
-        source: "../images/Tan-Jacket.jpg",
-    },
-    {
-        price: "£24",
-        source: "../images/Top.jpg",
-    }
+  {
+    price: "£29",
+    source: "../images/Brown-Trousers.jpg",
+  },
+  {
+    price: "£111",
+    source: "../images/BW-Jacket.jpg",
+  },
+  {
+    price: "£129",
+    source: "../images/Green-PufferCoat.jpg",
+  },
+  {
+    price: "£36",
+    source: "../images/Green-Trousers.jpg",
+  },
+  {
+    price: "£39",
+    source: "../images/Grey-Bag.jpg",
+  },
+  {
+    price: "£35",
+    source: "../images/Grey-Trousers.jpg",
+  },
+  {
+    price: "£89",
+    source: "../images/Maroon-Dress.jpg",
+  },
+  {
+    price: "£11",
+    source: "../images/Sitting.jpg",
+  },
+  {
+    price: "£149",
+    source: "../images/Tan-Jacket.jpg",
+  },
+  {
+    price: "£24",
+    source: "../images/Top.jpg",
+  },
 ];
 
 //select the targeted image source
 function getImgSrc(imageSrc, target) {
-    target.src = imageSrc
+  target.src = imageSrc;
 }
 //select the targeted price text
 function getProductPrice(priceText, target) {
-    target.innerHTML = priceText;
+  target.innerHTML = priceText;
 }
 //modifies the image and price elements specified to show a new price and image
 function callNextImage(image, price) {
-    if (i == 10) {
-        i = 0;
-    }
-    getImgSrc(productItems[i].source, image);
-    getProductPrice(productItems[i].price, price);
-    i++;
+  if (i == 10) {
+    i = 0;
+  }
+  console.log(i);
+  getImgSrc(productItems[i].source, image);
+  getProductPrice(productItems[i].price, price);
+  i++;
 }
 //calls the function above on all four images and prices
 function loop() {
-    callNextImage(img1, price1);
-    callNextImage(img2, price2);
-    callNextImage(img3, price3);
-    callNextImage(img4, price4);
+  callNextImage(img1, price1);
+  callNextImage(img2, price2);
+  callNextImage(img3, price3);
+  callNextImage(img4, price4);
 }
 //calls a function in milliseconds
-setInterval(loop, 5000)
+setInterval(loop, 5000);
+
+// Slideshow Function //////////////////
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("product-slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
