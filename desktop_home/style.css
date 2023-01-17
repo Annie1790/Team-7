@@ -8,10 +8,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(12, auto);
   grid-template-rows: repeat(7, auto);
   gap: 30px;
-  justify-content: center;
   margin: 0px;
 }
 
