@@ -115,13 +115,14 @@ header {
 .shop-map-box {
   grid-row: 2;
   grid-column: 3/5;
-  display: flex;
+  position: relative;
+  display: grid;
   justify-content: center;
 }
 
 .shop-img {
   width: 816px !important;
-  height: 746px !important;
+  height: 646px !important;
   object-fit: cover;
 }
 
@@ -234,7 +235,7 @@ header {
 
 .reversible-jacket-gif {
   width: 816px !important;
-  height: 746px !important;
+  height: 646px !important;
   object-fit: cover;
 }
 
@@ -273,7 +274,6 @@ hr {
 }
 
 .categories-section h2 {
-  /* padding-left: 8%; */
   align-content: space-around;
 }
 
@@ -326,12 +326,16 @@ figcaption {
 /*Circular Fashion Box*/
 .circular-fashion-box {
   grid-row: 7;
-  grid-column: 3 / span 4;
+  grid-column: 3/5;
+  position: relative;
+  display: grid;
+  justify-content: center;
 }
 
 .circular-fashion-box > img {
-  width: 400px;
-  height: 300px;
+  width: 816px !important;
+  height: 646px !important;
+  object-fit: cover;
 }
 
 /* productpage.html CSS BELOW*/
