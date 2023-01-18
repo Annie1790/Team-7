@@ -352,19 +352,16 @@ section {
 .left {
   grid-row: 3;
   grid-column: 2/4;
-  /* position: relative; */
 }
 
 .right {
   grid-row: 3;
   grid-column: 5/6;
-  /* position: relative; */
 }
 
 .slideshow-container {
   width: 500px;
   height: 550px;
-  /* object-fit: contain; */
   margin: auto;
   position: relative;
 }
@@ -392,7 +389,6 @@ section {
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .numbertext {
