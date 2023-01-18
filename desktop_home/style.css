@@ -343,22 +343,35 @@ figcaption {
 /************************************************************************/
 /* Product Slideshow */
 
-/* .slideshow-box {
-  grid-row: 5;
-  grid-column: 3/12;
-  display: grid;
-} */
-
-.slideshow-container {
-  min-width: 500px;
-  position: relative;
-  margin: auto;
-  grid-row: 5;
-  grid-column: 3/12;
+section {
+  display: inline;
+  width: 500px;
+  height: 700px;
 }
 
-.product-slide {
-  display: none;
+.left {
+  grid-row: 3;
+  grid-column: 2/4;
+  /* position: relative; */
+}
+
+.right {
+  grid-row: 3;
+  grid-column: 5/6;
+  /* position: relative; */
+}
+
+.slideshow-container {
+  width: 500px;
+  height: 550px;
+  /* object-fit: contain; */
+  margin: auto;
+  position: relative;
+}
+
+.product-slide img {
+  height: 550px;
+  object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -374,7 +387,6 @@ figcaption {
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
@@ -402,6 +414,7 @@ figcaption {
   color: red;
 }
 
+/* Size Dropdown Menu */
 .size-dropbtn {
   background-color: #fff;
   border: #000 1px solid;
@@ -437,6 +450,7 @@ figcaption {
   padding: 10px;
 }
 
+/* Add to Bag Button */
 .purchase-btn {
   background-color: #32cd32;
   color: #f2f2f2;
