@@ -367,6 +367,7 @@ section {
 }
 
 .product-slide img {
+  width: 500px;
   height: 550px;
   object-fit: cover;
 }
