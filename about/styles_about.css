@@ -8,9 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, auto);
-  gap: 30px;
+   gap: 30px;
   margin: 0px;
 }
 
@@ -116,9 +114,7 @@ em {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80%
-  
+  justify-content: center;  
 }
 
 .image {
