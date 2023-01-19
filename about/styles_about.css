@@ -109,7 +109,12 @@ em {
   display: block;
 }
 
+/**********MAIN******************************/
 
+main {
+ margin: auto;
+ text-allign: center;
+}
 
 .container {
   display: flex;
