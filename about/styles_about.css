@@ -112,9 +112,10 @@ em {
 
 /**********MAIN******************************/
 
-main {
- margin: 100px;
- text-allign: center;
+
+.about us text{margin: 50px;
+ text-allign: justify;
+   
 }
 
 .container {
@@ -151,7 +152,7 @@ main {
 .caption {
   display:block;
     color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 
 }
