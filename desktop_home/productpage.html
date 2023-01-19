@@ -8,7 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../desktop_home/style.css" />
     <!-- JavaScript -->
-    <script src="./productpage_script.js" defer></script>
+    <script src="./productpage_script.js" defer type="module"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,25 +74,25 @@
           <!-- Product Slide 1 -->
           <div class="product-slide">
             <div class="numbertext">1 / 4</div>
-            <img src="../Images/Green-PufferCoat.jpg" />
+            <img id="img-1"/>
           </div>
 
           <!-- Product Slide 2 -->
           <div class="product-slide">
             <div class="numbertext">2 / 4</div>
-            <img src="../Images/Green-PufferCoat-2.jpg" />
+            <img id="img-2" />
           </div>
 
           <!-- Product Slide 3 -->
           <div class="product-slide">
             <div class="numbertext">3 / 4</div>
-            <img src="../Images/Green-PufferCoat-3.jpg" />
+            <img id="img-3"/>
           </div>
 
           <!-- Product Slide 4 -->
           <div class="product-slide">
             <div class="numbertext">4 / 4</div>
-            <img src="../Images/Green-PufferCoat-4.jpg" />
+            <img id="img-4"/>
           </div>
 
           <!-- Next and previous buttons -->
@@ -104,14 +104,14 @@
 
     <section class="right">
       <div class="product-info">
-        <h2>Hooded Puffer Jacket</h2>
-        <h3>£89.99</h3>
+        <h2 id="product-name"></h2>
+        <h3 id="product-price"></h3>
         <ul class="product-description">
-          <li>Drawstring hood with faux-fur trim</li>
-          <li>Zip fastening</li>
-          <li>Side pockets</li>
-          <li>Faux leather piping</li>
-          <li>Regular fit</li>
+          <li id="product-descr-1"></li>
+          <li id="product-descr-2"></li>
+          <li id="product-descr-3"></li>
+          <li id="product-descr-4"></li>
+          <li id="product-descr-5"></li>
         </ul>
         <!-- Dropdown Menu -->
         <div class="size-dropdown">
