@@ -1,187 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAKJ</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../desktop_home/style.css" />
-    <!-- JavaScript -->
-    <script src="./script.js" defer></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet" />
-  </head>
 
-  <body>
-    <!--Header, Navigation Bar, Dropdown Menu-->
-    <header>
-      <nav class="navbar">
-        <!--Flexbox for navbar tags-->
-        <a href="#">FAKJ</a>
-        <!--Logo-->
-        <ul class="symbols">
-          <li class="search-symbol">
-            <!--Symbol for burger bar-->
-            <img src="../assets/bar.png" alt="search symbol" />
-            <div class="dropdown">
-              <!--Dropdown menu, display is changing on hover-->
-              <div class="dropdown-menu max-width">
-                <!--container with styling-->
-                <div><a href="#">NEW </a></div>
-                <div class="border"></div>
-                <!--stripes between list tags-->
-                <div><a href="#">FIND YOUR STYLE </a></div>
-                <div class="border"></div>
-                <div><a href="#">TOPS </a></div>
-                <div class="border"></div>
-                <div><a href="#">TROUSERS </a></div>
-                <div class="border"></div>
-                <div><a href="#">DRESSES </a></div>
-                <div class="border"></div>
-                <div><a href="#">OUTERWEAR </a></div>
-                <div class="border"></div>
-                <div><a href="#">SHOES </a></div>
-                <div class="border"></div>
-                <div><a href="#">ACCESSORIES </a></div>
-                <div class="border"></div>
-                <div><a href="../about/about.html"> ABOUT US</a></div>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAKJ</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../desktop_home/style.css" />
+  <!-- JavaScript -->
+  <script src="./script.js" defer></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--Header, Navigation Bar, Dropdown Menu-->
+  <header>
+    <nav class="navbar">
+      <!--Flexbox for navbar tags-->
+      <a href="#">FAKJ</a>
+      <!--Logo-->
+      <ul class="symbols">
+        <li class="search-symbol">
+          <!--Symbol for burger bar-->
+          <img src="../assets/bar.png" alt="search symbol" />
+          <div class="dropdown">
+            <!--Dropdown menu, display is changing on hover-->
+            <div class="dropdown-menu max-width">
+              <!--container with styling-->
+              <div><a href="#">NEW </a></div>
+              <div class="border"></div>
+              <!--stripes between list tags-->
+              <div><a href="#">FIND YOUR STYLE </a></div>
+              <div class="border"></div>
+              <div><a href="#">TOPS </a></div>
+              <div class="border"></div>
+              <div><a href="#">TROUSERS </a></div>
+              <div class="border"></div>
+              <div><a href="#">DRESSES </a></div>
+              <div class="border"></div>
+              <div><a href="#">OUTERWEAR </a></div>
+              <div class="border"></div>
+              <div><a href="#">SHOES </a></div>
+              <div class="border"></div>
+              <div><a href="#">ACCESSORIES </a></div>
+              <div class="border"></div>
+              <div><a href="../about/about.html"> ABOUT US</a></div>
             </div>
-          </li>
-          <li>
-            <!--Shopping cart-->
-            <img src="../assets/shopping_cart.png" alt="shopping cart" />
-          </li>
-          <!--Shopping Cart-->
-        </ul>
-      </nav>
-      <!--Coupon-->
-      <div class="coupon">
-        <span>50% OFF WORLDWIDE SHIPPING! USE <em>#CODEFIRSTGIRLS</em> COUPON AT CHECKOUT!</span>
-      </div>
-    </header>
-
-    <div class="shop-map-box">
-      <img class="shop-img" src="../Images/Tan-Jacket.jpg" alt="tan jacket with shop button" />
+          </div>
+        </li>
+        <li>
+          <!--Shopping cart-->
+          <img src="../assets/shopping_cart.png" alt="shopping cart" />
+        </li>
+        <!--Shopping Cart-->
+      </ul>
+    </nav>
+    <!--Coupon-->
+    <div class="coupon">
+      <span>50% OFF WORLDWIDE SHIPPING! USE <em>#CODEFIRSTGIRLS</em> COUPON AT CHECKOUT!</span>
     </div>
+  </header>
 
-    <div class="gradient-background">
-      <!--Fresh arrivals-->
-      <h2 class="fresh-arrivals-header">FRESH ARRIVALS</h2>
-      <!--Fresh arrivals container-->
-      <div class="fresh-arrivals-slide-box">
-        <!--Containers-->
-        <div class="box-1">
-          <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-          <p class="box-price-tag" id="price-tag-1">£15</p>
-          <div class="overlay"></div>
-          <img class="product-image" id="image-1" />
-        </div>
-
-        <div class="box-2">
-          <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-          <p class="box-price-tag" id="price-tag-2">£15</p>
-          <div class="overlay"></div>
-          <img class="product-image" id="image-2" />
-        </div>
-
-        <div class="box-3">
-          <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-          <p class="box-price-tag" id="price-tag-3">£15</p>
-          <div class="overlay"></div>
-          <img class="product-image" id="image-3" />
-        </div>
-
-        <div class="box-4">
-          <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
-          <p class="box-price-tag" id="price-tag-4">£15</p>
-          <div class="overlay"></div>
-          <img class="product-image" id="image-4" />
-        </div>
-      </div>
+  <div class="shop-map-box">
+    <img class="shop-img" src="../Images/Tan-Jacket.jpg" alt="tan jacket with shop button" />
+    <div class="centered">
+      <h1>NEW</h1>
+      <button>SHOP</button>
     </div>
+  </div>
 
-    <div class="find-your-style-box">
-      <div class="find-your-style-text">
-        <h2 class="find-your-text">FIND YOUR</h2>
-        <p class="style-text">STYLE</p>
-        <hr />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
-        </p>
-        <button>TAKE THE QUIZ</button>
+  <div class="gradient-background">
+    <!--Fresh arrivals-->
+    <h2 class="fresh-arrivals-header">FRESH ARRIVALS</h2>
+    <!--Fresh arrivals container-->
+    <div class="fresh-arrivals-slide-box">
+      <!--Containers-->
+      <div class="box-1">
+        <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+        <p class="box-price-tag" id="price-tag-1">£15</p>
+        <div class="overlay"></div>
+        <img class="product-image" id="image-1" />
       </div>
-      <img
-        class="reversible-jacket-gif"
-        src="../Images/Reversible-Jacket.GIF"
-        alt="reversible jacket gif" />
-    </div>
 
-    <h2 class="categories-header">PRODUCTS</h2>
-    <div class="categories-section">
-      <div class="categories-background">
-        <div class="gallery-scroll">
-          <figure class="gallery-item">
-            <img class="circle-img" src="../Images/Top.jpg" alt="light beige long sleeve shirt" />
-            <figcaption>TOPS</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="circle-img"
-              src="../Images/Green-Trousers.jpg"
-              alt="light beige long sleeve shirt" />
-            <figcaption>TROUSERS</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="circle-img"
-              src="../Images/Maroon-Dress.jpg"
-              alt="light beige long sleeve shirt" />
-            <figcaption>DRESSES</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="circle-img"
-              src="../Images/BW-Jacket.jpg"
-              alt="light beige long sleeve shirt" />
-            <figcaption>OUTERWEAR</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img class="circle-img" src="../Images/Nike-Trainers.jpg" alt="nike trainers" />
-            <figcaption>SHOES</figcaption>
-          </figure>
+      <div class="box-2">
+        <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+        <p class="box-price-tag" id="price-tag-2">£15</p>
+        <div class="overlay"></div>
+        <img class="product-image" id="image-2" />
+      </div>
 
-          <figure class="gallery-item">
-            <img
-              class="circle-img"
-              src="../Images/Grey-Bag.jpg"
-              alt="light beige long sleeve shirt" />
-            <figcaption>ACCESSORIES</figcaption>
-          </figure>
-        </div>
+      <div class="box-3">
+        <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+        <p class="box-price-tag" id="price-tag-3">£15</p>
+        <div class="overlay"></div>
+        <img class="product-image" id="image-3" />
+      </div>
+
+      <div class="box-4">
+        <!--Below: price tag, overlay effect, image (we will target these tags in JavaScript to change the pictures and prices)-->
+        <p class="box-price-tag" id="price-tag-4">£15</p>
+        <div class="overlay"></div>
+        <img class="product-image" id="image-4" />
       </div>
     </div>
+  </div>
 
-    <div class="circular-fashion-box">
-      <img src="../Images/Sitting.jpg" alt="circular fashion" usemap="#circ-fash" />
-      <map name="circ-fash">
-        <h1>CIRCULAR FASHION</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ipsum ut odio porta
-          scelerisque. Quisque dictum a ex nec venenatis. Suspendisse in semper orci. Aliquam erat
-          volutpat. Ut eu lacus sed magna convallis tincidunt. Donec mattis volutpat imperdiet. Ut
-          rhoncus enim id justo gravida, nec aliquam quam feugiat.
-        </p>
-        <button>LEARN MORE</button>
-      </map>
+  <div class="find-your-style-box">
+    <div class="find-your-style-text">
+      <h2 class="find-your-text">FIND YOUR</h2>
+      <p class="style-text">STYLE</p>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+      </p>
+      <button>TAKE THE QUIZ</button>
     </div>
+    <img class="reversible-jacket-gif" src="../Images/Reversible-Jacket.GIF" alt="reversible jacket gif" />
+  </div>
 
-    <footer>COPYRIGHT JOANNE, FEMKE, ANIKO, KELLI</footer>
-  </body>
+  <h2 class="categories-header">PRODUCTS</h2>
+  <div class="categories-section">
+    <div class="categories-background">
+      <div class="gallery-scroll">
+        <figure class="gallery-item">
+          <img class="circle-img" src="../Images/Top.jpg" alt="light beige long sleeve shirt" />
+          <figcaption>TOPS</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="circle-img" src="../Images/Green-Trousers.jpg" alt="light beige long sleeve shirt" />
+          <figcaption>TROUSERS</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="circle-img" src="../Images/Maroon-Dress.jpg" alt="light beige long sleeve shirt" />
+          <figcaption>DRESSES</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="circle-img" src="../Images/BW-Jacket.jpg" alt="light beige long sleeve shirt" />
+          <figcaption>OUTERWEAR</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="circle-img" src="../Images/Nike-Trainers.jpg" alt="nike trainers" />
+          <figcaption>SHOES</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img class="circle-img" src="../Images/Grey-Bag.jpg" alt="light beige long sleeve shirt" />
+          <figcaption>ACCESSORIES</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="circular-fashion-box">
+    <img src="../Images/Sitting.jpg" alt="circular fashion" usemap="#circ-fash" />
+    <map name="circ-fash">
+      <h1>CIRCULAR FASHION</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ipsum ut odio porta
+        scelerisque. Quisque dictum a ex nec venenatis. Suspendisse in semper orci. Aliquam erat
+        volutpat. Ut eu lacus sed magna convallis tincidunt. Donec mattis volutpat imperdiet. Ut
+        rhoncus enim id justo gravida, nec aliquam quam feugiat.
+      </p>
+      <button>LEARN MORE</button>
+    </map>
+  </div>
+
+  <footer>COPYRIGHT JOANNE, FEMKE, ANIKO, KELLI</footer>
+</body>
+
 </html>
