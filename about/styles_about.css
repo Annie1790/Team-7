@@ -10,7 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
   display: grid;
    gap: 30px;
-  margin: 0px;
+  %margin: 0px;
 }
 
 button {
