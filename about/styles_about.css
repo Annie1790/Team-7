@@ -149,7 +149,14 @@ em {
   text-align: center;
 
 }
-
+/************************************************************************/
+/*Arrow to go back*/
+back{
+pointer-events: all;
+cursor: pointer;
+max-width: 50px;
+max-height: 50px;
+}
 
 /************************************************************************/
 /*Footer*/
