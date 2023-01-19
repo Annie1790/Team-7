@@ -28,6 +28,10 @@ button:hover {
   color: white;
 }
 
+.hide {
+  display: none;
+}
+
 /************************************************************************/
 /*Header*/
 header {
@@ -182,11 +186,13 @@ em {
 }
 
 /*fix positions for slide pictures*/
-.fresh-arrivals-slide-box > div > img {
+.product-image {
   width: 400px;
   height: 300px;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.493);
+  opacity: 0.7;
+  transition: 0.1s ease;
 }
 
 .box-1 {
@@ -215,28 +221,20 @@ em {
   background-color: rgb(255, 255, 255, 0.5);
   margin: 2em;
   opacity: 0;
+  transition: 0.3s ease;
   font-size: 24px;
   padding-left: 10px;
   padding-right: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
-.overlay {
-  position: absolute;
-  height: 300px;
-  width: 400px;
-  opacity: 0;
-  transition: 0.5s ease;
-  margin: 0px;
-  background-color: #e2e2e2;
-}
-
-.box-1:hover .overlay,
-.box-2:hover .overlay,
-.box-3:hover .overlay,
-.box-4:hover .overlay {
-  opacity: 0.2;
+.box-1:hover .product-image,
+.box-2:hover .product-image,
+.box-3:hover .product-image,
+.box-4:hover .product-image{
   cursor: pointer;
+  opacity: 1;
+  transition: 0.01s ease;
 }
 
 .box-1:hover .box-price-tag,
@@ -244,6 +242,7 @@ em {
 .box-3:hover .box-price-tag,
 .box-4:hover .box-price-tag {
   opacity: 1;
+  transition: 0.3 ease;
 }
 
 /************************************************************************/
