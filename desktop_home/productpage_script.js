@@ -19,9 +19,7 @@ const list5 = document.querySelector("#product-descr-5");
 const productFromURL = window.location.search;
 const urlParams = new URLSearchParams(productFromURL);
 const getURL = urlParams.get("product");
-
-
-
+console.log(getURL)
 
 // Slideshow Function //////////////////
 let slideIndex = 1;
