@@ -48,8 +48,9 @@ window.addEventListener("load", loop)
 /******************************************************* */
 //get primary string from event
 function getSourceFromDom(e) {
-  const primary = e.target.currentSrc.slice(29);
-  return primary;
+  let primary = e.target.currentSrc;
+  primary = new URL(primary);
+  return primary.pathname.slice(8);
 }
 
 //creates a boxes array

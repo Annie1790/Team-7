@@ -24,9 +24,6 @@ const slideNext = document.querySelector(".next");
 const productFromURL = window.location.search;
 const urlParams = new URLSearchParams(productFromURL);
 const getURL = urlParams.get("product");
-console.log(getURL)
-
-const getImgQtyArray = Object.keys(productItems[0].images);
 
 function getProductPictures(index) {
   img1.src = productItems[index].images.primary;
@@ -34,8 +31,6 @@ function getProductPictures(index) {
   img3.src = productItems[index].images.third;
   img4.src = productItems[index].images.fourth;
 };
-
-console.log(Object.keys(productItems[1].images));
 
 function getProductPrice(index) {
   productPrice.innerHTML = productItems[index].price;
@@ -113,12 +108,12 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
-}
+};
 
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
-}
+};
 
 function showSlides(n) {
   let i;
@@ -136,7 +131,7 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
-}
+};
 
 slidePrev.addEventListener("click", function() {
   plusSlides(-1)
