@@ -35,7 +35,7 @@ function getProductPictures(index) {
   img4.src = productItems[index].images.fourth;
 };
 
-console.log(Object.keys(productItems[0].images));
+console.log(Object.keys(productItems[1].images));
 
 function getProductPrice(index) {
   productPrice.innerHTML = productItems[index].price;
@@ -123,6 +123,9 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = [img1, img2, img3, img4];
+  slides = slides.filter((emptyImg) => {
+    return !emptyImg.src.includes("undefined");
+  });
   if (n > slides.length) {
     slideIndex = 1;
   }
