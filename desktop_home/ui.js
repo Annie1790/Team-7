@@ -169,9 +169,9 @@ let productItems = [
         name: "Riding Cape",
         price: "£299",
         images: {
-            primary: "../Images/Riding-cape-1.jpg",
-            second: "../Images/Riding-cape-2.jpg",
-            third: "../Images/Riding-cape-3.jpg",
+            primary: "../Images/Riding-Cape-1.jpg",
+            second: "../Images/Riding-Cape-2.jpg",
+            third: "../Images/Riding-Cape-3.jpg",
         },
         descriptions: {
             descr1: "",
