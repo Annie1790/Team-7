@@ -50,7 +50,7 @@ window.addEventListener("load", loop)
 function getSourceFromDom(e) {
   let primary = e.target.currentSrc;
   primary = new URL(primary);
-  return primary.pathname.slice(8);
+  return primary.pathname.slice(primary.pathname.indexOf("/Images")+8);
 }
 
 //creates a boxes array
