@@ -113,8 +113,10 @@ em {
 /**********MAIN******************************/
 
 
-.about us text{margin: 50px;
+.aboutustext{
  text-allign: justify;
+ display: flex
+ justify-content: center;
    
 }
 
