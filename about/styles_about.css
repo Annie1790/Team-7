@@ -114,8 +114,7 @@ em {
 
 
 .aboutustext{
- text-allign: justify;
- display: flex
+ display: flex;
  justify-content: center;
    
 }
