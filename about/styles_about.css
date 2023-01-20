@@ -1,9 +1,8 @@
 /************************************************************************/
 /*Body*/
 * {
-  /*box-sizing: border-box; */
-  
-  /* list-style-type: none; */
+  box-sizing: border-box; 
+  list-style-type: none; 
 }
 
 body {
@@ -114,8 +113,7 @@ em {
 
 
 .aboutustext{
- display: flex;
- justify-content: center;
+justify-content: center;
    
 }
 
