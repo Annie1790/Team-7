@@ -27,7 +27,7 @@ function getProductPrice(priceText, target) {
 }
 //modifies the image and price elements specified to show a new price and image
 function callNextImage(image, price) {
-  if (i == 10) {
+  if (i == productItems.length) {
     i = 0;
   }
   getImgSrc(productItems[i].images.primary, image);
@@ -43,12 +43,12 @@ function loop() {
 }
 //calls a function in milliseconds
 setInterval(loop, 5000);
-
+window.addEventListener("load", loop)
 
 /******************************************************* */
 //get primary string from event
 function getSourceFromDom(e) {
-  const primary = e.srcElement.currentSrc.slice(29);
+  const primary = e.target.currentSrc.slice(29);
   return primary;
 }
 
