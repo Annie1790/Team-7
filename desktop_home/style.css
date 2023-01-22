@@ -28,10 +28,6 @@ button:hover {
   color: white;
 }
 
-.hide {
-  display: none;
-}
-
 /************************************************************************/
 /*Header*/
 header {
@@ -112,6 +108,10 @@ em {
 }
 
 .search-symbol:hover .dropdown {
+  display: block;
+}
+
+.navbar:hover .dropdown {
   display: block;
 }
 
@@ -309,13 +309,13 @@ hr {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding: 0 0 0 10%;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   overflow-x: scroll;
   text-align: center;
+
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -342,6 +342,7 @@ hr {
   width: 175px;
   height: 175px;
   margin-top: 10px;
+  object-fit: cover;
 }
 
 figcaption {
