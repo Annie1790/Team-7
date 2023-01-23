@@ -175,7 +175,7 @@ let productItems = [
   },
   {
     name: "Riding Cape",
-    price: "£299",
+    price: "£52",
     images: {
       primary: "../Images/Riding-Cape-1.jpg",
       second: "../Images/Riding-Cape-2.jpg",
@@ -191,7 +191,7 @@ let productItems = [
   },
   {
     name: "Valentino Trousers",
-    price: "£49",
+    price: "£65",
     images: {
       primary: "../Images/Valentino-Trousers-1.jpg",
       second: "../Images/Valentino-Trousers-2.jpg",
