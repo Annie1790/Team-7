@@ -114,7 +114,7 @@ let productItems = [
     images: {
       primary: "../Images/Sitting.jpg",
       second: "../Images/Corduroy-Trousers-2.jpg",
-      third: "../Imagess/Corduroy-Trousers-3.jpg",
+      third: "../Images/Corduroy-Trousers-3.jpg",
       fourth: "../Images/Corduroy-Trousers-4.jpg",
     },
     descriptions: {
