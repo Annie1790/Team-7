@@ -1,8 +1,8 @@
 /************************************************************************/
 /*Body*/
 * {
-  box-sizing: border-box; 
-  list-style-type: none; 
+  box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
@@ -108,75 +108,69 @@ em {
   display: block;
 }
 
+/**********MAIN******************************/
 
-  
-  /**********MAIN******************************/
-  
-  
-  .aboutustext{
-   display: block;
-   justify-content: center;
-   margin-left: 5%;
-   margin-right: 5%;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .image {
-    display:block;
-    width: 90%;
-    margin-left:  8px;
-    margin-right: 8px;
-    filter: grayscale(100%)
-  }
-  
-  .overlay {
-    display:block;
-    width:90%;
-    margin-left:  8px;
-    margin-right: 8px;
-    opacity: 00;
-    transition: .5s ease;
-    background-color: rgb(224, 223, 226);
-  }
-  
-  .container .image:hover .overlay {
-    opacity: 0.9;
-  }
-  
-  .image:hover{
-    filter: grayscale(0%)
-  }
-  .caption {
-    display:block;
-      color: rgb(0, 0, 0);
-    font-size: 20px;
-    text-align: center;
-  
-  }
-  /************************************************************************/
-  /*Arrow to go back*/
-  back{
+.aboutustext {
+  display: block;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  margin-left: 8px;
+  margin-right: 8px;
+  filter: grayscale(100%);
+}
+
+.overlay {
+  display: block;
+  width: 90%;
+  margin-left: 8px;
+  margin-right: 8px;
+  opacity: 00;
+  transition: 0.5s ease;
+  background-color: rgb(224, 223, 226);
+}
+
+.container .image:hover .overlay {
+  opacity: 0.9;
+}
+
+.image:hover {
+  filter: grayscale(0%);
+}
+.caption {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+}
+/************************************************************************/
+/*Arrow to go back*/
+back {
   pointer-events: all;
   cursor: pointer;
   max-width: 50px;
   max-height: 50px;
   margin-left: 5%;
-  }
-  
-  /************************************************************************/
-  /*Footer*/
-  footer {
-    grid-row: 9;
-    grid-column: 1 / span 6;
-    background-color: rgb(217, 217, 217, 100%);
-    margin-top: auto;
-  }
-  
-  
+}
+
+/************************************************************************/
+/*Footer*/
+footer {
+  grid-row: 9;
+  grid-column: 1 / span 6;
+  background-color: rgb(217, 217, 217, 100%);
+  margin-top: auto;
+}
