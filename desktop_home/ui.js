@@ -113,9 +113,9 @@ let productItems = [
     price: "£39",
     images: {
       primary: "../Images/Sitting.jpg",
-      second: "../Imgaes/Corduroy-Trousers-2.jpg",
-      third: "../Imgaes/Corduroy-Trousers-3.jpg",
-      foourth: "../Imgaes/Corduroy-Trousers-4.jpg",
+      second: "../Images/Corduroy-Trousers-2.jpg",
+      third: "../Imagess/Corduroy-Trousers-3.jpg",
+      foourth: "../Images/Corduroy-Trousers-4.jpg",
     },
     descriptions: {
       descr1: "Ralp Lauren brand trousers",
