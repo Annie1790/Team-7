@@ -115,7 +115,7 @@ let productItems = [
       primary: "../Images/Sitting.jpg",
       second: "../Images/Corduroy-Trousers-2.jpg",
       third: "../Imagess/Corduroy-Trousers-3.jpg",
-      foourth: "../Images/Corduroy-Trousers-4.jpg",
+      fourth: "../Images/Corduroy-Trousers-4.jpg",
     },
     descriptions: {
       descr1: "Ralp Lauren brand trousers",
