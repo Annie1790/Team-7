@@ -104,7 +104,7 @@ em {
   border-right: 1px solid black;
 }
 
-.search-symbol:hover .dropdown {
+.hamburger:hover .dropdown {
   display: block;
 }
 

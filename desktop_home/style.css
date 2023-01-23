@@ -107,13 +107,13 @@ em {
   border-right: 1px solid black;
 }
 
-.search-symbol:hover .dropdown {
+.hamburger:hover .dropdown {
   display: block;
 }
 
-.navbar:hover .dropdown {
+/* .navbar:hover .dropdown {
   display: block;
-}
+} */
 
 /************************************************************************/
 /*Shop Map*/
@@ -231,7 +231,7 @@ em {
 .box-1:hover .product-image,
 .box-2:hover .product-image,
 .box-3:hover .product-image,
-.box-4:hover .product-image{
+.box-4:hover .product-image {
   cursor: pointer;
   opacity: 1;
   transition: 0.01s ease;
@@ -315,7 +315,6 @@ hr {
   scroll-behavior: smooth;
   overflow-x: scroll;
   text-align: center;
-
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
