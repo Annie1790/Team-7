@@ -5,6 +5,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .navbar>ul {
+    padding: 0px;
+  }
+
+  .dropdown-menu {
+    flex-wrap: wrap;
+  }
+
   .shop-img {
     width: 408px !important;
   }
@@ -13,12 +21,12 @@
     width: 408px !important;
   }
 
-  .circular-fashion-box > img {
+  .circular-fashion-box>img {
     width: 408px !important;
   }
 
   .box-3 {
-    grid-row :3 !important;
+    grid-row: 3 !important;
     grid-column: 1 !important;
   }
 
@@ -32,14 +40,14 @@
     height: 200px !important;
   }
 
-  .product-slide > img {
+  .product-slide>img {
     width: 400px !important;
     height: 600px !important;
   }
 
   .right {
     grid-row: 4 !important;
-    grid-column: 2/4 !important ;
+    grid-column: 2/4 !important;
   }
 
 }
@@ -107,7 +115,7 @@ header {
   list-style-type: none;
 }
 
-.symbols > li > img {
+.symbols>li>img {
   width: 32px;
   height: 32px;
   margin: 1em;
@@ -152,7 +160,7 @@ em {
   background-color: white;
 }
 
-.dropdown-menu > div > a {
+.dropdown-menu>div>a {
   text-decoration: none;
   color: black;
 }
@@ -202,12 +210,10 @@ em {
   gap: 1em;
   justify-content: center;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    15deg,
-    rgb(174, 240, 253) 0%,
-    rgba(162, 162, 230, 1) 51%,
-    rgba(95, 228, 255, 1) 100%
-  );
+  background: linear-gradient(15deg,
+      rgb(174, 240, 253) 0%,
+      rgba(162, 162, 230, 1) 51%,
+      rgba(95, 228, 255, 1) 100%);
   padding-bottom: 3em;
 }
 
@@ -398,7 +404,7 @@ figcaption {
   justify-content: center;
 }
 
-.circular-fashion-box > img {
+.circular-fashion-box>img {
   width: 816px;
   height: 646px;
   object-fit: cover;

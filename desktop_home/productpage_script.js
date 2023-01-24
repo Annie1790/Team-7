@@ -133,10 +133,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 };
 
-slidePrev.addEventListener("click", function() {
+slidePrev.addEventListener("click", function () {
   plusSlides(-1)
 });
-slideNext.addEventListener("click", function() {
+slideNext.addEventListener("click", function () {
   plusSlides(1)
 });
 window.addEventListener("load", matchURLName(getURL));
