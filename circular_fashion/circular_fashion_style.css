@@ -16,9 +16,6 @@ body {
 
 @media screen and (max-width: 600px) {
 
-    .navbar {
-        flex-direction:column-reverse !important;
-    }
 
     .navbar>ul {
         padding: 0px;
@@ -32,7 +29,7 @@ body {
     main {
         grid-column: 1 !important;
     }
-    
+
     section {
         grid-row: 3 !important;
         grid-column: 1 !important;
@@ -156,7 +153,7 @@ section {
 
 #circ-fash-img {
     width: 816px;
-    height: 646px   ;
+    height: 646px;
     object-fit: cover;
 }
 
@@ -168,5 +165,8 @@ footer {
     grid-row: 5;
     grid-column: 1 / span 6;
     background-color: rgb(217, 217, 217, 100%);
-    margin-top: auto;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    justify-content: center;
 }
