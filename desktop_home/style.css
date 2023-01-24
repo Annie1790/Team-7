@@ -28,6 +28,21 @@ button:hover {
   color: white;
 }
 
+p {
+  font-size: 18px;
+}
+
+.large-text {
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+hr {
+  border-style: solid;
+}
+
 /************************************************************************/
 /*Header*/
 header {
@@ -133,16 +148,15 @@ em {
 
 .centered {
   position: absolute;
-  font-size: 4em;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: white;
-  letter-spacing: 5px;
 }
 
 /************************************************************************/
@@ -170,7 +184,7 @@ em {
 .fresh-arrivals-header {
   grid-row: 3;
   grid-column: 1 / span 4;
-  font-size: 32px;
+  font-size: 28px;
   color: white;
   margin: 0px;
   padding: 0px;
@@ -271,9 +285,9 @@ em {
 }
 
 .find-your-text {
-  margin-bottom: 0;
   font-size: 3rem;
   letter-spacing: 5px;
+  margin-bottom: 0;
 }
 
 .style-text {
@@ -281,10 +295,6 @@ em {
   font-size: 5rem;
   letter-spacing: 18px;
   margin: 0;
-}
-
-hr {
-  border-style: solid;
 }
 
 /************************************************************************/
@@ -309,8 +319,6 @@ hr {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   overflow-x: scroll;
@@ -507,5 +515,8 @@ footer {
   grid-row: 9;
   grid-column: 1 / span 6;
   background-color: rgb(217, 217, 217, 100%);
-  margin-top: auto;
+  padding: 20px;
+  position: relative;
+  display: grid;
+  justify-content: center;
 }
