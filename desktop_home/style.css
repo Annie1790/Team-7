@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .shop-img {
     width: 408px !important;
   }
